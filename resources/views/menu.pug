@@ -1,16 +1,16 @@
-doctype transitional
-html(xmlns='http://www.w3.org/1999/xhtml')
-  head
-    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
-    title Simple Gray, Professional free website template
-    meta(name='keywords', content='free templates, website templates, CSS, XHTML')
-    meta(name='description', content='Simple Gray - Professional free XHTML/CSS template provided by templatemo.com')
-    link(rel='stylesheet', href='/stylesheets/style.css')
-    script(language='javascript', type='text/javascript').
-        function clearText(field)
-        {
-            if (field.defaultValue == field.value) field.value = '';
-            else if (field.value == '') field.value = field.defaultValue;
-        }
-  body
-    block content
+#templatemo_header_wrapper
+    #templatemo_header
+        #site_logo
+        #templatemo_menu
+            #templatemo_menu_left
+            ul
+                li
+                    a.current(href='/') Home
+                li
+                    a(href='/page1') Services
+                li
+                    a(href='/page2') Gallery
+                li
+                    a(href='/page3') Company
+                li
+                    a.last(href='/page4') Contact

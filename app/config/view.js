@@ -53,7 +53,7 @@ var config = {
      |
      */
 
-    'defaultEngine': 'jade',
+    'defaultEngine': 'pug',
 
     /*
      |--------------------------------------------------------------------------
@@ -72,7 +72,7 @@ var config = {
      |
      */
     'engines': {
-        'jade': engines.jade
+        'pug': engines.pug
     }
 };
 

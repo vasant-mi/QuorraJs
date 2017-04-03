@@ -1,22 +1,7 @@
 extends layout
 
 block content
-  #templatemo_header_wrapper
-    #templatemo_header
-      #site_logo
-      #templatemo_menu
-        #templatemo_menu_left
-        ul
-          li
-            a.current(href='#') Home
-          li
-            a(href='http://www.templatemo.com') Services
-          li
-            a(href='http://www.templatemo.com/page/2') Gallery
-          li
-            a(href='#') Company
-          li
-            a.last(href='#') Contact
+  include menu
   #templatemo_banner_wrapper
     #templatemo_banner
       #templatemo_banner_image
