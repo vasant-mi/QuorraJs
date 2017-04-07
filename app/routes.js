@@ -1,8 +1,10 @@
 
 var Route = App.router;
+let HomeController = require('./controllers/HomeController')
 
-Route.get('/', function(req, res){
-    res.view('page1', { title: 'Quorra' });
+Route.get('/',{
+   /* res.view('page1', { title: 'Quorra' });*/
+   uses: HomeController.DemoIndex
 });
 
 Route.get('/page1', function(req, res){

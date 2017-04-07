@@ -9,7 +9,8 @@
     "consolidate": "~0.14.1",
     "jade": "~1.9.2",
     "positron": "1.0.0",
-    "sails-disk": "~0.10.7"
+    "sails-disk": "~0.10.7",
+    "sails-mongo": "^0.12.2"
   },
   "devDependencies": {
     "gulp": "~3.9.1",

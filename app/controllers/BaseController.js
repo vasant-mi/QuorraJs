@@ -1,7 +1,7 @@
 
 var Controller = (require('positron').Controller);
-var BaseController = Controller.extend(function(){
+class BaseController extends Controller {
 
-});
+};
 
 module.exports = BaseController;

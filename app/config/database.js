@@ -64,11 +64,11 @@ var config = {
 
         'mongo': {
             'adapter': 'sails-mongo',
-            'host': 'localhost',
+            'host': '0.0.0.0',
             'port': 27017,
-            'user': 'tron',
+            'user': '',
             'password': '',
-            'database': 'tron'
+            'database': 'Demo'
         }
     },
 
@@ -92,7 +92,7 @@ var config = {
          |
          */
 
-        'connection': 'localDiskDb',
+        'connection': 'mongo',
 
         /*
          |--------------------------------------------------------------------------
