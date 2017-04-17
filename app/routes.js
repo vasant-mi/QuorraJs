@@ -1,11 +1,27 @@
 
 var Route = App.router;
 let HomeController = require('./controllers/HomeController')
+let TableController = require('./controllers/TableController')
+let EditTableController = require('./controllers/EditTableController')
 
 Route.get('/',{
-   /* res.view('page1', { title: 'Quorra' });*/
    uses: HomeController.DemoIndex
 });
+
+Route.get('/table',{
+    as : 'table',
+    uses: TableController.DemoTableIndex
+});
+
+Route.get('/table/{id}',{
+    uses: EditTableController.DemoTableIndex
+});
+
+Route.post('/saveData',{
+    uses: EditTableController.saveDemo
+});
+
+
 
 Route.get('/page1', function(req, res){
     res.view('page1', { title: 'Quorra' });

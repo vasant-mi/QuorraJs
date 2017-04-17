@@ -1,0 +1,129 @@
+extends layout
+
+block content
+  include menu
+  #templatemo_banner_wrapper
+    #templatemo_banner
+      #templatemo_banner_image
+        #templatemo_banner_image_wrapper
+          img(src='images/templatemo_image_01.jpg', alt='image 1')
+      #templatemo_banner_content
+        .header_01 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        p
+          | Aliquam dignissim elementum est sit amet iaculis. Integer pretium ultricies risus, condimentum molestie odio euismod vitae.
+        .button_01
+          a(href='#') Read more
+      .cleaner
+  style.
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+  table
+    tr
+      th Id
+      th Email
+      th Password
+      th Action
+    each val in DemoObject
+      tr
+        td= val.id
+        td= val.email
+        td= val.password
+        td
+          a(href='table/'+val.id) Edit
+      tr
+  #templatemo_footer_wrapper
+    #templatemo_footer
+      .section_w180
+        .header_05 Services
+        .section_w180_content
+          ul.footer_menu_list
+            li
+              a(href='#') Lorem ipsum dolor
+            li
+              a(href='#') Cum sociis
+            li
+              a(href='#') Donec quam
+            li
+              a(href='#') Nulla consequat
+            li
+              a(href='#') In enim justo
+      .section_w180
+        .header_05 About
+        .section_w180_content
+          ul.footer_menu_list
+            li
+              a(href='#') Nullam quis
+            li
+              a(href='#') Sed consequat
+            li
+              a(href='#') Cras dapibus
+            li
+              a(href='#') Lorem ipsum dolor
+            li
+              a(href='#') Cum sociis
+      .section_w180
+        .header_05 Cool links
+        .section_w180_content
+          ul.footer_menu_list
+            li
+              a(href='#') Aenean vulputate
+            li
+              a(href='#') Etiam ultricies
+            li
+              a(href='#') Nullam quis
+            li
+              a(href='#') Sed consequat
+            li
+              a(href='#') Cras dapibus
+      .section_w180
+        .header_05 Contact
+        .section_w180_content
+          ul.footer_menu_list
+            li
+              a(href='#') Donec quam
+            li
+              a(href='#') Nulla consequat
+            li
+              a(href='#') In enim justo
+            li
+              a(href='#') Aenean vulputate
+            li
+              a(href='#') Etiam ultricies
+      .section_w180
+        .header_05 Partners
+        .section_w180_content
+          ul.footer_menu_list
+            li
+              a(href='http://www.templatemo.com', target='_parent') CSS Templates
+            li
+              a(href='http://www.flashmo.com', target='_parent') Flash Websites
+            li
+              a(href='http://www.templatemo.com/page/2', target='_parent') Website Templates
+            li
+              a(href='http://www.webdesignmo.com', target='_parent') Web Design Tips
+            li
+              a(href='http://www.photovaco.com', target='_blank') Free Stock Photos
+      .margin_bottom_20
+      |  Copyright &copy; 2048
+      a(href='#') Your Company Name
+      |  |
+      a(href='http://www.iwebsitetemplate.com', target='_parent') Website Templates
+      |  by
+      a(href='http://www.templatemo.com', target='_parent') Free CSS Templates
+      .cleaner
+  div(align='center')
+    | This template downloaded form
+    a(href='http://all-free-download.com/free-website-templates/') free website templates
